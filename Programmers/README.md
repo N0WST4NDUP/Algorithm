@@ -1,7 +1,0 @@
-![background](./background.png)
-## symbolic link
-
-* [Level 1](./)
-* [Level 2](./)
-* [PCCP 기출문제](./src/main/java/PCCP)
-* [2024 KAKAO WINTER INTERNSHIP](./)
