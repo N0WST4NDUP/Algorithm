@@ -1,4 +1,4 @@
 ![background](./background.png)
 ## symbolic link
 
-* [Level 1](./)  * [Level 2](./)  * [Level 3](./)
+<div style="text-align:center"> [Level 1](./) [Level 2](./) [Level 3](./) </div>
