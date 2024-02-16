@@ -3,8 +3,8 @@
 
 ## Level
     프로그래머스에서 선정한 Level을 기준으로 분류 (level0은 제외)
-### [1️⃣ level1](./)
-### [2️⃣ level2](./)
+### [1️⃣ level1](./1)
+### [2️⃣ level2](./2)
 ### [3️⃣ level3](./)
 
 ## MyFavorite
