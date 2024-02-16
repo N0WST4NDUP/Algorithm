@@ -1,5 +1,5 @@
 ![background](./background.png)
-##:dart:Symbolic Link
+## :dart:Symbolic Link
 
 * [Level 1](./)
 * [Level 2](./)
