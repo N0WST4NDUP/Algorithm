@@ -1,7 +1,7 @@
 [![background](./background.png)](https://programmers.co.kr/)
-## :dart:Symbolic Link
+# :dart:Symbolic Link
 
-# Level
+## Level
 * [Level 1](./)
 * [Level 2](./)
 * [Level 3](./)
