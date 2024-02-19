@@ -19,5 +19,5 @@
 
 <!-- 푸터 -->
 <p align='center'>
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=D09AFF&height=270&section=footer" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=D09AFF&height=200&section=footer" />
 </p>
