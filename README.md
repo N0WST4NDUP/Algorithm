@@ -13,7 +13,7 @@
     </a>
     <a href="./백준">
         <img src="https://t1.daumcdn.net/cfile/tistory/99122B4D5B45634609" style="height:62px"/><br>
-        <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=dlwotjtj9898"/>
+        <img src="https://mazandi.herokuapp.com/api?handle=dlwotjtj9898&theme=cold"/>
     </a>
 </p>
 
