@@ -1,4 +1,9 @@
 <p align='center'>
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
+</p>
+<!-- 헤더 -->
+
+<p align='center'>
     <img src="https://capsule-render.vercel.app/api?type=Venom&color=auto&height=300&section=header&text=Algorithm&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Here%20are%20my%20rules!&descAlignY=51&descAlign=62"/>
 </p>
 
@@ -15,4 +20,9 @@
         <img src="https://t1.daumcdn.net/cfile/tistory/99122B4D5B45634609" style="height:62px"/><br>
         <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=dlwotjtj9898"/>
     </a>
+</p>
+
+<!-- 푸터 -->
+<p align='center'>
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
 </p>
