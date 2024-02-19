@@ -1,5 +1,5 @@
 [![background](./background.png)](https://programmers.co.kr/)
-# :dart:Symbolic Link
+# Navigation
 
 ## Level
     프로그래머스에서 선정한 Level을 기준으로 분류 (level0은 제외)
