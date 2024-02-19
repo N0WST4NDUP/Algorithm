@@ -1,10 +1,5 @@
 <p align='center'>
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=D09AFF&height=150&section=header" />
-</p>
-<!-- 헤더 -->
-
-<p align='center'>
-    <img src="https://capsule-render.vercel.app/api?type=Venom&color=auto&height=300&section=header&text=Algorithm&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Here%20are%20my%20rules!&descAlignY=51&descAlign=62"/>
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=D09AFF&height=270&section=header&text=Algorithm&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Here%20are%20my%20rules!&descAlignY=51&descAlign=62&fontColor=ffffff"/>
 </p>
 
 <p align='center'>
@@ -24,5 +19,5 @@
 
 <!-- 푸터 -->
 <p align='center'>
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=D09AFF&height=150&section=footer" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=D09AFF&height=270&section=footer" />
 </p>
