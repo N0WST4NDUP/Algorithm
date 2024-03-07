@@ -2,16 +2,15 @@
     <img src="https://capsule-render.vercel.app/api?type=waving&color=D09AFF&height=270&section=header&text=Algorithm&fontSize=90&animation=fadeIn&fontAlignY=38&fontColor=ffffff"/>
 </p>
 
-<p align='center'>
+<div align='center'>
     <img src="https://img.shields.io/github/languages/top/N0WST4NDUP/Algorithm.svg?color=orange&logo=java"/>
     <img src="https://img.shields.io/github/last-commit/N0WST4NDUP/Algorithm.svg?color=cc33f"/>
-</p>
+</div>
 
-<p align='center'>
-    <a href="./프로그래머스"><img src="https://qspblog.com/images/60ca8914f0a92-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%97%B0%EC%8A%B5-%EB%AC%B8%EC%9E%90%EC%97%B4-p%EC%99%80-y%EC%9D%98-%EA%B0%9C%EC%88%98%ED%92%80%EA%B8%B0.png" style="height:62px"/></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp&nbsp&nbsp&nbsp
-    <a href="./백준"><img src="https://t1.daumcdn.net/cfile/tistory/99122B4D5B45634609" style="height:62px"/></a><br>
-</p>
+<div align='center'>
+    <a href="./프로그래머스"><img src="" style="height:62px"/></a><br>
+    <a href="./백준"><img src="" style="height:62px"/></a><br>
+</div>
 
 <!-- 푸터 -->
 <p align='center'>
