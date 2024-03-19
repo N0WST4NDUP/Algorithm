@@ -5,7 +5,7 @@ class Solution {
             if (prime[i]) continue;
             if (n%i == 1) return i;
             for (int j = i*2; j<n; j+=i) {
-                if (prime[i]) continue;
+                if (prime[j]) continue;
                 prime[j] = true;
             }
         }
