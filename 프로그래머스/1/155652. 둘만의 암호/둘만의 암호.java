@@ -6,9 +6,9 @@ class Solution {
         List<Character> list = new ArrayList<>();
         int n = 97;
         
-        for (int i=0; i<26; i++) {
-            if (skip.contains(String.valueOf((char)(i + n)))) continue;
-            list.add((char)(i+n));
+        while (n <= 122) {
+            if (skip.contains(String.valueOf((char)n))) {n++; continue;}
+            list.add((char)n++);
         }
         
         for (char c : s.toCharArray()) {
