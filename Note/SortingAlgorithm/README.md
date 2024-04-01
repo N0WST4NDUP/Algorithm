@@ -55,51 +55,51 @@
     </tr>
     <tr align='center'>
       <td><a href="./BubbleSort/">버블 정렬</a></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n)</b></td>
     </tr>
     <tr align='center'>
       <td><a href="./">삽입 정렬</a></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n)</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n²)</b></td>
     </tr>
     <tr align='center'>
       <td><a href="./">선택 정렬</a></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n²)</b></td>
     </tr>
     <tr align='center'>
       <td><a href="./">병합 정렬</a></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n log n)</b></td>
     </tr>
     <tr align='center'>
       <td><a href="./">퀵 정렬</a></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n²)</b></td>
+      <td><b>O(n log n)</b></td>
     </tr>
     <tr align='center'>
       <td><a href="./">힙 정렬</a></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n log n)</b></td>
+      <td><b>O(n log n)</b></td>
     </tr>
     <tr align='center'>
       <td><a href="./">기수 정렬</a></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
-      <td><b>O</b></td>
+      <td><b>O(dn)</b></td>
+      <td><b>O(dn)</b></td>
+      <td><b>O(dn)</b></td>
       <td></td>
     </tr>
   </table>
