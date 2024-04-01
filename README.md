@@ -21,5 +21,5 @@
 </table>
 
 <div align='center'>
-    <li><a href="./">정렬 알고리즘</a></li>
+    <li><a href="./Note/SortingAlgorithm/">정렬 알고리즘</a></li>
 </div>
