@@ -47,11 +47,14 @@
   <h3>시간 복잡도 & 공간 복잡도</h3>
   <table border="1">
     <tr align='center'>
-      <th>정렬 종류</th>
-      <th>평균 시간 복잡도</th>
-      <th>최선 시간 복잡도</th>
-      <th>최악 시간 복잡도</th>
-      <th>공간 복잡도</th>
+      <th rowspan='2'>정렬 종류</th>
+      <th colspan='3'>시간 복잡도</th>
+      <th rowspan='2'>공간 복잡도</th>
+    </tr>
+    <tr align='center'>
+      <th>평균(Average)</th>
+      <th>최선(Best)</th>
+      <th>최악(Worst)</th>
     </tr>
     <tr align='center'>
       <td><a href="./BubbleSort/">버블 정렬</a></td>
