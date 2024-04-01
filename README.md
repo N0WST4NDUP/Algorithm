@@ -19,3 +19,7 @@
         <td align='center'><img src="https://img.shields.io/badge/Doing!-00e34f" style="height:20px"/></td>
     </tr>
 </table>
+
+<div align='center'>
+    <li><a href="./">정렬 알고리즘</a></li>
+</div>
