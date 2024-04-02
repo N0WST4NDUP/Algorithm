@@ -15,30 +15,30 @@ Bubble Sort [버블 정렬]
 |:-:|:-:|:-:|:-:|:-:|
 
 - ##### 1회전
-|7|4|5|1|3|
+|${\textsf{\color{red}7}}$|${\textsf{\color{blue}4}}$|5|1|3|
 |:-:|:-:|:-:|:-:|:-:|
-|**4**|**7**|**5**|**1**|**3**|
-|**4**|**5**|**7**|**1**|**3**|
-|**4**|**5**|**1**|**7**|**3**|
-|**4**|**5**|**1**|**3**|**7**|
+|**4**|${\textsf{\color{red}7}}$|${\textsf{\color{blue}5}}$|**1**|**3**|
+|**4**|**5**|${\textsf{\color{red}7}}$|${\textsf{\color{blue}1}}$|**3**|
+|**4**|**5**|**1**|${\textsf{\color{red}7}}$|${\textsf{\color{blue}3}}$|
+|**4**|**5**|**1**|**3**|${\textsf{\color{lightgreen}7}}$|
 
 - ##### 2회전
-|4|5|1|3|7|
+|${\textsf{\color{red}4}}$|${\textsf{\color{blue}5}}$|1|3|${\textsf{\color{lightgreen}7}}$|
 |:-:|:-:|:-:|:-:|:-:|
-|**4**|**5**|**1**|**3**|**7**|
-|**4**|**1**|**5**|**3**|**7**|
-|**4**|**1**|**3**|**5**|**7**|
+|**4**|${\textsf{\color{red}5}}$|${\textsf{\color{blue}1}}$|**3**|${\textsf{\color{lightgreen}7}}$|
+|**4**|**1**|${\textsf{\color{red}5}}$|${\textsf{\color{blue}3}}$|${\textsf{\color{lightgreen}7}}$|
+|**4**|**1**|**3**|${\textsf{\color{lightgreen}5}}$|${\textsf{\color{lightgreen}7}}$|
 
 - ##### 3회전
-|4|1|3|5|7|
+|${\textsf{\color{red}4}}$|${\textsf{\color{blue}1}}$|3|${\textsf{\color{lightgreen}5}}$|${\textsf{\color{lightgreen}7}}$|
 |:-:|:-:|:-:|:-:|:-:|
-|**1**|**4**|**3**|**5**|**7**|
-|**1**|**3**|**4**|**5**|**7**|
+|**1**|${\textsf{\color{red}4}}$|${\textsf{\color{blue}3}}$|${\textsf{\color{lightgreen}5}}$|${\textsf{\color{lightgreen}7}}$|
+|**1**|**3**|${\textsf{\color{lightgreen}4}}$|${\textsf{\color{lightgreen}5}}$|${\textsf{\color{lightgreen}7}}$|
 
 - ##### 4회전
-|1|3|4|5|7|
+|${\textsf{\color{red}1}}$|${\textsf{\color{blue}3}}$|${\textsf{\color{lightgreen}4}}$|${\textsf{\color{lightgreen}5}}$|${\textsf{\color{lightgreen}7}}$|
 |:-:|:-:|:-:|:-:|:-:|
-|**1**|**3**|**4**|**5**|**7**|
+|${\textsf{\color{lightgreen}1}}$|${\textsf{\color{lightgreen}3}}$|${\textsf{\color{lightgreen}4}}$|${\textsf{\color{lightgreen}5}}$|${\textsf{\color{lightgreen}7}}$|
 
 - #### 오름차순 완성 상태
 |1|3|4|5|7|
