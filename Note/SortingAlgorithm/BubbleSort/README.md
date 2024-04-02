@@ -44,9 +44,9 @@ Bubble Sort [버블 정렬]
 |1|3|4|5|7|
 |:-:|:-:|:-:|:-:|:-:|
 
-- #### 시각화
-![BubbleSort](https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif)   
-https://ko.wikipedia.org/wiki/버블_정렬
+>##### 총 라운드는 (배열 크기 - 1) 번 진행되고,   
+>##### 각 라운드별 비교 횟수는 (배열 크기 - 라운드 횟수) 만큼 비교한다.   
+>##### ![BubbleSort](https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif)   **
 
 구현 코드
 ----------------
@@ -72,4 +72,5 @@ public void bubbleSort(int[] arr) {
 참조
 ----------------
 - [https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html](https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html) - [알고리즘] 버블 정렬(bubble sort)이란
+- [https://st-lab.tistory.com/195](https://st-lab.tistory.com/195) - 자바 [JAVA] - 거품 정렬 (Bubble Sort)
 - [https://ko.wikipedia.org/wiki/%EB%B2%84%EB%B8%94_%EC%A0%95%EB%A0%AC](https://ko.wikipedia.org/wiki/%EB%B2%84%EB%B8%94_%EC%A0%95%EB%A0%AC) - 위키백과
