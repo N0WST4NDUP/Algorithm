@@ -57,7 +57,7 @@
       <th>최악(Worst)</th>
     </tr>
     <tr align='center'>
-      <td><a href="./BubbleSort/">버블 정렬</a></td>
+      <td><a href="./BubbleSort#시간-복잡도">버블 정렬</a></td>
       <td><b>O(n²)</b></td>
       <td><b>O(n²)</b></td>
       <td><b>O(n²)</b></td>
