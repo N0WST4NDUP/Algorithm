@@ -44,6 +44,10 @@ Bubble Sort [버블 정렬]
 |1|3|4|5|7|
 |:-:|:-:|:-:|:-:|:-:|
 
+- #### 시각화
+![BubbleSort](https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif)   
+https://ko.wikipedia.org/wiki/버블_정렬
+
 구현 코드
 ----------------
 ```java
