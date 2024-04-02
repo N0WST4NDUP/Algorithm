@@ -8,7 +8,7 @@
       <th>단점</th>
     </tr>
     <tr>
-      <td align='center'><a href="./BubbleSort/">버블 정렬</a></td>
+      <td align='center'><a href="./BubbleSort#장점-및-단점">버블 정렬</a></td>
       <td><li>구현이 간단하다.</li></td>
       <td><li>정렬 시간이 오래 걸린다.</li></td>
     </tr>
