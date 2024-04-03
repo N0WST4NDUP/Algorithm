@@ -76,22 +76,23 @@ public void bubbleSort(int[] arr) {
 
 시간 복잡도
 ----------------
-> Best, Average, Worst 모두 동일한 O(n²)의 시간 복잡도를 가진다.
+> Best, Average, Worst 모두 동일한 O(N²)의 시간 복잡도를 가진다.
 
 N이 정렬해야하는 리스트의 자료 수, i가 라운드라고 가정을 하자.
 |라운드|비교 횟수|
 |:-:|:-:|
-|**i = 1**|**(n-1)**|
-|**i = 2**|**(n-2)**|
-|**i = 3**|**(n-3)**|
+|**i = 1**|**(N-1)**|
+|**i = 2**|**(N-2)**|
+|**i = 3**|**(N-3)**|
 |**⋮**|**⋮**|
-|**i = (n-2)**|**2**|
-|**i = (n-1)**|**1**|
+|**i = (N-2)**|**2**|
+|**i = (N-1)**|**1**|
 
 즉, 다음과 같이 일반화하여 공식으로 만들 수 있다.   
-    
-``T(n) = (n-1) + (n-2) + (n-3) + ⋯ + 2 + 1
-  = 1 + 2 + 3 + ⋯ + (n-2) + (n-1)``
+<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcaPQ6R%2FbtqT7WpmfYi%2FFcUPJByWgOZe8ANHFKSe40%2Fimg.png' width='400'>   
+그리고 N에 대하여 다음을 만족하기 때문에 시간복잡도 또한 도출 할 수 있다.   
+<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FSkRlG%2FbtqT17EhBud%2FT7Dxz78bEkqUWMpZRoEwn1%2Fimg.png' width='150'>   
+즉, 시간 복잡도는 O(N²)이다.
 
 참조
 ----------------
