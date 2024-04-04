@@ -13,7 +13,7 @@
       <td><li>정렬 시간이 오래 걸린다.</li></td>
     </tr>
     <tr>
-      <td align='center'><a href="./">삽입 정렬</a></td>
+      <td align='center'><a href="./InsertionSort">삽입 정렬</a></td>
       <td><li>최선의 경우 <b>O(n)</b>으로 정렬이 가능하다.</li></td>
       <td><li>최악의 경우 <b>O(n²)</b>이 걸린다.</li></td>
     </tr>
@@ -64,7 +64,7 @@
       <td><b>O(n)</b></td>
     </tr>
     <tr align='center'>
-      <td><a href="./">삽입 정렬</a></td>
+      <td><a href="./InsertionSort">삽입 정렬</a></td>
       <td><b>O(n²)</b></td>
       <td><b>O(n)</b></td>
       <td><b>O(n²)</b></td>
