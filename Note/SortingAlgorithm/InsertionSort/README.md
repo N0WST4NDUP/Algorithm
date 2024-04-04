@@ -100,19 +100,19 @@ public void insertionSort(int[] arr) {
 장점 및 단점
 ----------------
 ### [장점]
-- 구현이 매우 간단하다.
-- 추가적인 메모리 소비가 적다.
+- 추가적인 메모리 소비가 작다.
+- 거의 정렬 된 경우 매우 효율적이다. 즉, 최선의 경우 O(N)의 시간복잡도를 갖는다.
+- 안정 정렬이 가능하다.
 ### [단점]
-- 각 라운드 진행시 항상 인접한 두 원소를 비교하기에 다른 정렬에 비해 시간이 오래 걸린다.
-
-> 일반적으로 자료의 교환 작업(SWAP)이 자료의 이동 작업(MOVE)보다 더 복잡하기 때문에   
-버블 정렬은 단순성에도 불구하고 거의 쓰이지 않는다.
+- 역순에 가까울 수록 매우 비효율적이다. 즉, 최악의 경우 O(N²)의 시간 복잡도를 갖는다.
+- 레코드 수가 많고 레코드 크기가 클 경우에 적합하지 않다.
 
 시간 복잡도
 ----------------
-> Best, Average, Worst 모두 동일한 O(N²)의 시간 복잡도를 가진다.
+> Best Case의 경우 O(N)의 시간 복잡도를 가지지만, Average Case 및 Worst Case의 경우 O(N²)의 시간 복잡도를 가진다.
 
-N이 정렬해야하는 리스트의 자료 수, i가 라운드라고 가정을 하자.
+N이 정렬해야하는 리스트의 자료 수, i가 라운드라고 가정을 하자.   
+최악의 경우 반복문은 이러한 과정을 거친다.
 |라운드|비교 횟수|
 |:-:|:-:|
 |**i = 1**|**(N-1)**|
@@ -126,9 +126,11 @@ N이 정렬해야하는 리스트의 자료 수, i가 라운드라고 가정을 
 <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcaPQ6R%2FbtqT7WpmfYi%2FFcUPJByWgOZe8ANHFKSe40%2Fimg.png' width='400'>   
 그리고 N에 대하여 다음을 만족하기 때문에 시간복잡도 또한 도출 할 수 있다.   
 <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FSkRlG%2FbtqT17EhBud%2FT7Dxz78bEkqUWMpZRoEwn1%2Fimg.png' width='150'>   
-즉, 시간 복잡도는 O(N²)이다.
+시간복잡도는 상한선을 의미하기 때문에 아래와 같은 결과를 도출할 수 있다.   
+<img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmaxvO%2FbtqOCdcN4aV%2F50NkVodKbaiKDOld2vFMm0%2Fimg.png' width='450'>    
+시간복잡도가 O(N2)인 정렬 알고리즘 중에서는 비교 횟수에 대한 기대값이 상대적으로 적기 때문에 빠른편에 속하는 알고리즘이다.
 
 참조
 ----------------
 - [https://st-lab.tistory.com/179](https://st-lab.tistory.com/179) - 자바 [JAVA] - 삽입 정렬 (Insertion Sort)
-- [https://ko.wikipedia.org/wiki/%EB%B2%84%EB%B8%94_%EC%A0%95%EB%A0%AC](https://ko.wikipedia.org/wiki/%EB%B2%84%EB%B8%94_%EC%A0%95%EB%A0%AC) - 위키백과
+- [https://ko.wikipedia.org/wiki/%EC%82%BD%EC%9E%85_%EC%A0%95%EB%A0%AC](https://ko.wikipedia.org/wiki/%EC%82%BD%EC%9E%85_%EC%A0%95%EB%A0%AC) - 위키백과
