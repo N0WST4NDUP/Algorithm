@@ -18,7 +18,7 @@
       <td><li>최악의 경우 <b>O(n²)</b>이 걸린다.</li></td>
     </tr>
     <tr>
-      <td align='center'><a href="./">선택 정렬</a></td>
+      <td align='center'><a href="./SelectionSort">선택 정렬</a></td>
       <td><li>구현이 간단하다.</li><li>비교하는 횟수에 비해 교환이 적게 일어난다.</li></td>
       <td><li>정렬 시간이 오래 걸린다.</li></td>
     </tr>
@@ -71,7 +71,7 @@
       <td><b>O(n²)</b></td>
     </tr>
     <tr align='center'>
-      <td><a href="./">선택 정렬</a></td>
+      <td><a href="./SelectionSort">선택 정렬</a></td>
       <td><b>O(n²)</b></td>
       <td><b>O(n²)</b></td>
       <td><b>O(n²)</b></td>
