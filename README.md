@@ -22,4 +22,6 @@
 
 <div align='center'>
     <li><a href="./Note/SortingAlgorithm/">정렬 알고리즘</a></li>
+    <li><a href="./">1차원 배열 탐색 알고리즘</a></li>
+    <li><a href="./">2차원 배열 탐색 알고리즘</a></li>
 </div>
