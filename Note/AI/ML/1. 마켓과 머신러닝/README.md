@@ -29,7 +29,7 @@ plt.xlabel('length')
 plt.ylabel('weight')
 plt.show()
 ```
-
+![산점도1](./2.png)
 ### 3. 규칙 생성
 ```python
 length = bream_length + smelt_length
@@ -62,6 +62,7 @@ plt.xlabel('length')
 plt.ylabel('weight')
 plt.show()
 ```
+![산점도1](./6.png)
 
 배운점
 ---
