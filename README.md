@@ -25,3 +25,7 @@
     <li><a href="./Note/ArraySearchAlgorithm">배열 탐색 알고리즘</a></li>
     <li><a href="./Note/GraphSearchAlgorithm">그래프 탐색 알고리즘</a></li>
 </div>
+<br>
+<div align='center'> <h3><a href="./Note/AI">AI</a></h3>
+    <a href="./Note/AI/ML">ML</a>
+</div>
