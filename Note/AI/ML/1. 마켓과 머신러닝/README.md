@@ -1,7 +1,7 @@
 마켓과 머신러닝
-=====================
+===
 목표
----------------------
+---
 가장 간단한 머신러닝 알고리즘 중 하나인 k-최근접 이웃을 사용하여   
 2개의 종류를 분류하는 머신러닝 모델을 훈련합니다.   
 
@@ -53,3 +53,15 @@ kn.score(fish_data, fish_target)
 kn.predict([[30, 600]])
 ```
 > $predictive : 1$
+### 6. 산점도 그리기
+```python
+plt.scatter(bream_length, bream_weight)
+plt.scatter(smelt_length, smelt_weight)
+plt.scatter(30, 600, marker='^')
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+
+배운점
+---
