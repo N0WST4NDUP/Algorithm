@@ -36,6 +36,7 @@ kn.fit(train_input, train_target)
 kn.score(test_input, test_target)
 ```
 > $score : 0.0$
+> > **샘플링 편향**$^{SamplingBias}$
 ### 3. 랜덤 인덱스 생성
 ```python
 import numpy as np # 고차원 배열을 손쉽게 만들고 간편하게 조작하는 라이브러리 (넘파이)
