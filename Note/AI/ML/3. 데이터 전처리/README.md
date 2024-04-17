@@ -66,6 +66,28 @@ plt.show()
 ![산점도1](./1.png)
 > marker='^'으로 표기된 임의의 데이터는 도미에 가깝다.   
 > 하지만 결과는 빙어로 나왔다. **Why?**
+```python
+distance, indexes = kn.kneighbors([[25, 150]]) #넘파이 배열 인덱싱
+plt.scatter(train_input[:,0], train_input[:,1])
+plt.scatter(25, 150, marker='^')
+plt.scatter(train_input[indexes,0], train_input[indexes,1], marker='D')
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+
+print(distance)
+```
+![산점도2](./2.png)
+> 삼각형 샘플에 가장 가까운 5개의 샘플 중 4개가 빙어   
+> > k-최근접 이웃은 인접한 샘플 중에서 다수인 클래스를 예측으로 사용하기에 이전 예측 결과가 빙어 였던 것
+
+핵심 포인트
+---
+- **데이터 전처리**는 머신러닝 모델에 훈련 데이터를 주입하기 전에 가공하는 단계
+- **표준점수**는 훈련 세트의 스케일을 바꾸는 대표적인 방법 중 하나
+  - 표준점수를 얻으려면 특성의 평균을 빼고 표준편차로 나눕니다.
+  - 반드시 훈련세트의 평균과 표준편차로 테스트 세트를 바꿔야 합니다.
+- **브로드캐스팅**은 크기가 다른 numpy 배열에서 자동으로 사칙 연산을 모든 행이나 열로 확장하여 수행하는 기능
 
 배운점
 ---
