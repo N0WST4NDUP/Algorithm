@@ -40,6 +40,32 @@ print(test_target)
 ```
 > $[1.\ 0.\ 0.\ 0.\ 1.\ 1.\ 1.\ 1.\ 1.\ 1.\ 1.\ 1.\ 1.]$   
 > $[0.\ 0.\ 1.\ 0.\ 1.\ 0.\ 1.\ 1.\ 1.\ 1.\ 1.\ 1.\ 1.]$
+### 3. 수상한 도미 한 마리
+```python
+from sklearn.neighbors import KNeighborsClassifier
+
+kn = KNeighborsClassifier()
+kn.fit(train_input, train_target) # k-최근접 이웃 훈련
+print(kn.score(test_input, test_target)) # 테스트
+
+# 임의의 도미 데이터 예측
+print(kn.predict([[25, 150]]))
+```
+> $score:1.0$   
+> $predict:[0.]$
+### 4. 산점도 그리기
+```python
+import matplotlib.pyplot as plt
+
+plt.scatter(train_input[:,0], train_input[:,1])
+plt.scatter(25, 150, marker='^')
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+![산점도1](./1.png)
+> ^으로 표기된 임의의 데이터는 도미에 가깝다.   
+> 하지만 결과는 빙어로 나왔다. **Why?**
 
 배운점
 ---
