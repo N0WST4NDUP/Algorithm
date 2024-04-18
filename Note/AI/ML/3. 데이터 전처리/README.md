@@ -52,7 +52,7 @@ print(kn.score(test_input, test_target)) # 테스트
 print(kn.predict([[25, 150]]))
 ```
 > $score:1.0$   
-> $predict:[0.]$
+> $predict:[0.]$ //빙어(0)
 ### 4. 산점도 그리기
 ```python
 import matplotlib.pyplot as plt
@@ -115,6 +115,34 @@ train_scaled = (train_input-mean)/std #표준점수
 ```
 > $mean:[\ 27.29722222\ 454.09722222]$   
 > $std:[\  9.98244253\ 323.29893931]$
+> > train_scaled를 계산 할 때 numpy는 스스로 column끼리 계산해준다.
+> > > **브로드캐스팅**$^{broadcasting}$
+### 7. 전처리 데이터로 모델 훈련하기
+```python
+#테스트 모델 표준점수
+test_scaled = (test_input - mean) / std
+
+kn.fit(train_scaled, train_target)
+print(kn.score(test_scaled, test_target))
+
+#예측 샘플 표준점수
+new = ([25, 150] - mean) / std
+
+print(kn.predict([new]))
+```
+> $score:1.0$   
+> $predict:[1.]$ //도미(1)
+### 8. 산점도 그리기
+```python
+distance, indexes = kn.kneighbors([new])
+plt.scatter(train_scaled[:,0], train_scaled[:,1])
+plt.scatter(new[0], new[1], marker='^')
+plt.scatter(train_scaled[indexes,0], train_scaled[indexes,1], marker='D')
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+![산점도4](./4.png)
 
 핵심 포인트
 ---
