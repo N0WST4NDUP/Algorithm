@@ -67,19 +67,54 @@ plt.show()
 > marker='^'으로 표기된 임의의 데이터는 도미에 가깝다.   
 > 하지만 결과는 빙어로 나왔다. **Why?**
 ```python
-distance, indexes = kn.kneighbors([[25, 150]]) #넘파이 배열 인덱싱
+#넘파이 배열 인덱싱
+#param으로 주어진 샘플의 가장 가까운 이웃을 찾아주는 메소드 ".kneighbors()"
+distance, indexes = kn.kneighbors([[25, 150]]) #KNeighborsClassifier의 이웃 개수 n_neighbors의 기본값은 5
+
 plt.scatter(train_input[:,0], train_input[:,1])
 plt.scatter(25, 150, marker='^')
 plt.scatter(train_input[indexes,0], train_input[indexes,1], marker='D')
 plt.xlabel('length')
 plt.ylabel('weight')
 plt.show()
-
-print(distance)
 ```
 ![산점도2](./2.png)
 > 삼각형 샘플에 가장 가까운 5개의 샘플 중 4개가 빙어   
 > > k-최근접 이웃은 인접한 샘플 중에서 다수인 클래스를 예측으로 사용하기에 이전 예측 결과가 빙어 였던 것
+### 5. 기준을 맞춰라
+> 샘플의 특성인 길이와 무게의 **스케일**$^{scale}$이 달라 벌어진 일
+```python
+plt.scatter(train_input[:,0], train_input[:,1])
+plt.scatter(25, 150, marker='^')
+plt.scatter(train_input[indexes,0], train_input[indexes,1], marker='D')
+plt.xlim((0, 1000)) #x축의 범위를 y값과 동일하게 0~1000으로 설정
+plt.xlabel('length')
+plt.ylabel('weight')
+plt.show()
+```
+![산점도3](./3.png)
+> 데이터를 표현하는 기준이 다르면 올바른 예측이 불가능   
+> 거리 기반 알고리즘의 경우 각 특성간의 기준을 맞춰주어야 제대로 사용 가능   
+> > **데이터 전처리**
+### 6. 표준점수와 표준편차
+> **분산** : 데이터에서 평균을 뺀 값을 모두 제곱한 다음 평균을 내어 구한다.   
+> **표준편차** : 분산의 제곱근으로 데이터가 분산된 정도를 나타낸다.   
+> **표준점수** : 각 데이터가 원점에서 몇 표준편차만큼 떨어져 있는지를 나타내는 값.
+```python
+mean = np.mean(train_input, axis = 0) #평균을 계산 하는 함수
+std = np.std(train_input, axis = 0) #표준편차를 계산 하는 함수
+
+#axis는 배열의 축이지만 차원의 개념으로 이해하면 쉽다.
+#1차원은 선, 2차원은 면, 3차원은 도형이듯이 axis는 그 선을 축으로 표현한다.
+#train_input은 [[길이1,무게1].[길이2,무게2]] 이런 식으로 정의가 되어있는데
+#axis가 0이므로 [길이1,무게1] -> [길이2,무게2] 순서로 진행 (row 단위)
+
+print(mean, std) #데이터의 평균과 각 데이터간의 분산된 정도
+
+train_scaled = (train_input-mean)/std #표준점수
+```
+> $mean:[\ 27.29722222\ 454.09722222]$   
+> $std:[\  9.98244253\ 323.29893931]$
 
 핵심 포인트
 ---
