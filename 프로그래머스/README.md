@@ -13,3 +13,16 @@
 `BFS와 DFS에 대해 더 깊게 탐구해볼 수 있어서 재밌었다.`
 - ### [1️⃣ 신고 결과 받기](https://github.com/N0WST4NDUP/Algorithm/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/1/92334.%E2%80%85%EC%8B%A0%EA%B3%A0%E2%80%85%EA%B2%B0%EA%B3%BC%E2%80%85%EB%B0%9B%EA%B8%B0)
 `실무에서 비슷한 알고리즘이 자주 쓰일 것 같아 재밌게 풀었다.`
+
+## Inspirational
+> 색다른 접근 방식에 소름 돋아서 저장하려고 만든 탭   
+> 링크의 경우 문제와 내가 푼 답이 있으며, 아래의 코드는 다른 사람이 푼 답이다.
+##### [0️⃣ 문자열 밀기](./0/120921. 문자열 밀기)
+```java
+class Solution {
+    public int solution(String A, String B) {
+        String tempB = B.repeat(3);
+        return tempB.indexOf(A);
+    }
+}
+```
