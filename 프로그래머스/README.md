@@ -26,3 +26,12 @@ class Solution {
     }
 }
 ```
+##### [0️⃣ 세균 증식](./0/120910. 세균 증식)
+> 비트연산자 활용
+```java
+class Solution {
+    public int solution(int n, int t) {
+        return n << t;
+    }
+}
+```
