@@ -3,18 +3,10 @@ import java.util.*;
 class Solution {
     public long solution(String numbers) {
         String[] numArr = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-        List<String> list = new ArrayList<>(Arrays.asList(numArr));
-        long answer = 0;
-        int curr = 0;
-        for (int i=0; i<numbers.length(); i++) {
-            int num = list.indexOf(numbers.substring(curr, i+1));
-            if (num < 0) continue;
-                
-            curr = i+1;
-            answer *= 10;
-            answer += num;
+        for (int i=0; i<numArr.length; i++) {
+            numbers = numbers.replaceAll(numArr[i], String.valueOf(i));
         }
-        return answer;
+        return Long.parseLong(numbers);
     }
     
     
