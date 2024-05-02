@@ -2,11 +2,11 @@ import java.util.Arrays;
 
 class Solution {
     public int[] solution(String myString) {
-        String[] str = myString.concat("-").split("x");
+        String[] str = myString.split("x", myString.length());
         int[] answer = new int[str.length];
         
         for (int i=0; i<answer.length; i++) {
-            answer[i] = i==answer.length-1 ? str[i].length()-1 : str[i].length();
+            answer[i] = str[i].length();
         }
         
         return answer;
