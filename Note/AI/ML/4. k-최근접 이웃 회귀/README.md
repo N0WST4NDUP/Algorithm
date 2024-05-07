@@ -52,9 +52,26 @@ print(train_input.shape, test_input.shape)
 > (42, 1) (14, 1)
 ### 4. 결정계수(R²)
 ```python
+from sklearn.neighbors import KNeighborsRegressor
 
+knr = KNeighborsRegressor()
+
+# k-최근접 이웃 회귀 모델을 훈련
+knr.fit(train_input, train_target)
+print(knr.score(test_input, test_target))
+
+from sklearn.metrics import mean_absolute_error
+
+# 테스트 세트에 대한 예측을 만든다
+test_prediction = knr.predict(test_input)
+
+# 테스트 세트에 대한 평균 절댓값 오차를 계산
+mae = mean_absolute_error(test_target, test_prediction)
+print(mae)
 ```
-
+> $score:0.992809406101064$
+> $mae:19.157142857142862$
+### 5. 과대적합 vs 과소적합
 
 핵심 포인트
 ---
