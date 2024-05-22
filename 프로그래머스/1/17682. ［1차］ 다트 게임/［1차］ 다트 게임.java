@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 class Solution {
     public int solution(String result) {
-        int[] cnt = new int[5];
+        int[] cnt = new int[4];
         int idx = 1;
         for (char c : result.toCharArray()) {
             switch (c) {
