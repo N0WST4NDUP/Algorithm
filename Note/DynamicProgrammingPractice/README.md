@@ -10,4 +10,3 @@
 ----
 [1. 피보나치 수열 + 속도 비교](./DP_1.java)   
 [2. 삼각형의 거쳐 간 최댓값](./DP_2.java)   
-[3. 타겟 넘버 (BFS/DFS 문제 DP로 풀기)](https://github.com/N0WST4NDUP/Algorithm/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/43165.%E2%80%85%ED%83%80%EA%B2%9F%E2%80%85%EB%84%98%EB%B2%84)   
