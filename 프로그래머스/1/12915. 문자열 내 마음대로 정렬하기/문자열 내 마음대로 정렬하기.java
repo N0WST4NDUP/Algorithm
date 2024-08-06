@@ -2,8 +2,7 @@ import java.util.*;
 
 class Solution {
     public String[] solution(String[] strings, int n) {
-        Arrays.sort(strings, new OwnComparator(n));
-        return strings;
+        return Arrays.stream(strings).sorted(new OwnComparator(n)).toArray(String[]::new);
     }
 }
 
