@@ -29,8 +29,7 @@ class Solution {
     }
     
     public String convert(int time) {
-        String mm = String.valueOf(time/60);
-        String ss = String.valueOf(time%60);
-        return (mm.length() < 2 ? "0" + mm : mm) + ":" + (ss.length() < 2 ? "0" + ss : ss);
+        String result = String.format("%02d:%02d", time/60, time%60);
+        return result;
     }
 }
