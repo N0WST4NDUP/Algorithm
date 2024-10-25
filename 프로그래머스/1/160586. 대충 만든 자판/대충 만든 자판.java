@@ -1,23 +1,32 @@
 import java.util.*;
+import java.util.stream.IntStream;
 
 class Solution {
     public int[] solution(String[] keymap, String[] targets) {
-        Map<Character, Integer> map = new HashMap<>();
-        int[] answer = new int[targets.length];
-        for (String key : keymap) {
-            for (int j=0; j<key.length(); j++) {
-                map.put(key.charAt(j),(map.containsKey(key.charAt(j)) ? 
-                         (map.get(key.charAt(j))) > j ? j : map.get(key.charAt(j))
-                          : j));
+        Map<String, Integer> keyMap = new HashMap<>();
+        
+        for (int i=0; i<keymap.length; i++) {
+            String[] splt = keymap[i].split("");
+            for (int j=0; j<splt.length; j++) {
+                keyMap.put(
+                    splt[j], 
+                    Math.min(j, keyMap.getOrDefault(splt[j], j))
+                );
             }
         }
-
-        for (int i=0; i<targets.length; i++) {
-            for (int j=0; j<targets[i].length(); j++) {
-                if (!map.containsKey(targets[i].charAt(j))) {
-                    answer[i] = -1; break;
+        
+        int[] answer = new int[targets.length];
+        
+        for (int i=0; i<answer.length; i++) {
+            for (String str : targets[i].split("")) {
+                int count = keyMap.getOrDefault(str, -1);
+                
+                if (count == -1) {
+                    answer[i] = count;
+                    break;
+                } else {
+                    answer[i] += count+1;
                 }
-                answer[i] += map.get(targets[i].charAt(j))+1;
             }
         }
         
